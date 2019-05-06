@@ -1,17 +1,13 @@
 <template lang="html">
-  <div id="view">
-    <router-view id="view"/>
-  </div>
+
 </template>
 
 <script>
 import Header from "@/components/Header"
 
 export default {
-  name: "app",
-  components: {
-    Header
-  }
+  components: {Header},
+  props: ['article'],
 }
 </script>
 
